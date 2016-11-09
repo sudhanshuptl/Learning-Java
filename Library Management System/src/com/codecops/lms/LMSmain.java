@@ -36,14 +36,14 @@ public class LMSmain {
         System.out.print("\n\n\n\n\t\t\t");
         for (int index = 0; index < library.length(); index++) {
             System.out.print(library.charAt(index));
-            // Thread.sleep(100);
+             Thread.sleep(100);
         }
         System.out.print("\n\n\n\n");
         System.out.println();
         // System.out.println("\n\n\n\n\t\t\tWelcome to Library Management System[LMS]\n\n\n\n");
         for (int i = 5; i >= 0; i--) {
             System.out.print(i + "\t");
-            // Thread.sleep(500);
+             Thread.sleep(500);
         }
         System.out.print("\n\n\n\n");
 

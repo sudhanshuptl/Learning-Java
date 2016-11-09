@@ -7,7 +7,7 @@ import com.codecops.lms.Members;
 
 public class AdminServices {
     /*
-     * to add up new user to the database 
+     * to add up new user to the database
      */
 
     public void addUser(Database database, String name, String passwd,
@@ -25,12 +25,12 @@ public class AdminServices {
             e.printStackTrace();
         }
     }
+
     /*
      * to display the user details.
      */
 
     public void displayUserDetails(Database database) {
-        int index = 0;
         System.out
                 .println("Id \tName \tMobile Number     Issued book 1     Issued Book 2  Issued Book 3 ");
         System.out
@@ -38,18 +38,14 @@ public class AdminServices {
         for (Members mem : database.membersList) {
             System.out.print(mem.getUserId() + "\t" + mem.getName() + "\t"
                     + mem.getMobileNumber());
-            // + "\t\t" + mem.getIssuedBooks()[index] + "\t\t" +
-            // mem.getIssuedBooks()[index+1] + "\t\t" +
-            // mem.getIssuedBooks()[index+2]);
-            for (index = 0; index < 3; index++) {
-                System.out.print("\t\t" + mem.getIssuedBooks()[index]);
-            }
-            System.out.println();
+            	System.out.println(mem.getIssuedBooks());
+            	System.out.println();
         }
     }
-  /*
-   * to remove a user details.
-   */
+
+    /*
+     * to remove a user details.
+     */
     public void removeUser(Database database, int userId) {
         for (int i = 0; i < database.membersList.size(); i++) {
             if (database.membersList.get(i).getUserId() == userId) {
@@ -58,9 +54,10 @@ public class AdminServices {
             }
         }
     }
-   /*
-    * to update the name of the user.
-    */
+
+    /*
+     * to update the name of the user.
+     */
     public void updateUserDetails(Database database, String name, int userId) {
         for (int i = 0; i < database.membersList.size(); i++) {
             if (database.membersList.get(i).getUserId() == userId) {
@@ -69,6 +66,7 @@ public class AdminServices {
             }
         }
     }
+
     /*
      * to update the phone no of the user.
      */
@@ -81,6 +79,7 @@ public class AdminServices {
             }
         }
     }
+
     /*
      * to update the password of the user.
      */
@@ -95,6 +94,7 @@ public class AdminServices {
             }
         }
     }
+
     /*
      * to add up a new book in the database.
      */
@@ -113,8 +113,9 @@ public class AdminServices {
             e.printStackTrace();
         }
     }
+
     /*
-     * to remove the book from the database 
+     * to remove the book from the database
      */
     public void removeBook(Database database, int bookId) {
         for (int i = 0; i < database.booksList.size(); i++) {
@@ -124,6 +125,7 @@ public class AdminServices {
             }
         }
     }
+
     /*
      * to display the book details
      */
@@ -140,6 +142,7 @@ public class AdminServices {
                     + "\t\t" + book.isBookAvailability());
         }
     }
+
     /*
      * to display the book of the database.
      */

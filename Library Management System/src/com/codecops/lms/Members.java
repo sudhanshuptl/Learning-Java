@@ -39,8 +39,12 @@ public class Members extends Users {
 //        this.issuedBooks = issuedBooks;
 //    }
 
-    public int[] getIssuedBooks() {
-        return issuedBooks;
+    public String getIssuedBooks() {
+    	String issuedBookDetail="";
+    	for(int index=0;index<issuedBooks.length;index++){
+    		issuedBookDetail=issuedBookDetail.concat("\t\t"+issuedBooks[index]);
+    	}
+    	return issuedBookDetail;
     }
 
     public void setMobileNumber(long mobileNumber) {

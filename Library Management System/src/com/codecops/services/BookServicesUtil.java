@@ -5,13 +5,8 @@ import com.codecops.lms.*;
 import java.util.Comparator;
 import java.util.List;
 
-public class BookServicesUtil implements Comparator<Books>,
+public class BookServicesUtil implements 
         java.io.Serializable {
-
-    /**
-     * 
-     */
-    private static final long serialVersionUID = 1L;
 
     /*
      * sort by rating.
@@ -221,10 +216,10 @@ public class BookServicesUtil implements Comparator<Books>,
         return counter;
     }
 
-    public int compare(Books o1, Books o2) {
-        // TODO Auto-generated method stub
-        return 0;
-    }
+//    public int compare(Books o1, Books o2) {
+//        // TODO Auto-generated method stub
+//        return 0;
+//    }
 
     /*
      * to display book list
@@ -256,6 +251,7 @@ public class BookServicesUtil implements Comparator<Books>,
             }
         }
         int flag = 0;
+        if(members!=null){
         for (int index = 0; index < database.booksList.size(); index++) {
             if (database.booksList.get(index).getBookId() == bookId
                     && database.booksList.get(index).isBookAvailability() == true) {
@@ -269,7 +265,10 @@ public class BookServicesUtil implements Comparator<Books>,
                 }
 
             }
-
+        }
+        }
+        else{
+        	System.out.println("There is no memebr available with This ID");
         }
 
         if (flag == 0) {
@@ -292,7 +291,7 @@ public class BookServicesUtil implements Comparator<Books>,
             }
         }
         int flag = 0;
-
+        if(members !=null){
         if (members.removeIssuedBooks(bookId)) {
             flag = 1;
             for (int j_index = 0; j_index < database.booksList.size(); j_index++) {
@@ -302,9 +301,11 @@ public class BookServicesUtil implements Comparator<Books>,
                 }
             }
             System.out.println(" Return Completed,");
-            // break;
         }
-        // }
+        }
+        else{
+        	System.out.println("No member find with this Id");
+        }
         if (flag == 0) {
             System.out.println("Not Found try again");
         }

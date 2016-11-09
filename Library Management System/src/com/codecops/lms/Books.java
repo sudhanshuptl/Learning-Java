@@ -1,5 +1,7 @@
 package com.codecops.lms;
 
+
+
 public class Books {
     final private int bookId;
     private String bookName;
@@ -16,6 +18,7 @@ public class Books {
         this.bookRating = rating;
 
     }
+    
 
     public void setBookAvailability(boolean bookAvailability) {
         this.bookAvailability = bookAvailability;
