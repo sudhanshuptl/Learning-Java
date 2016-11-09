@@ -19,19 +19,19 @@ public class Admin extends Users {
         return false;
     }
 
-    public void setUserId(int userId) {
-        super.userId = userId;
-    }
-
-    public void setName(String name) {
-        super.name = name;
-    }
-
-    public void setMobileNumber(long mobileNumber) {
-        super.mobileNumber = mobileNumber;
-    }
-
-    public void setPasswd(String passwd) {
-        super.passwd = passwd;
-    }
+//    public void setUserId(int userId) {
+//        super.userId = userId;
+//    }
+//
+//    public void setName(String name) {
+//        super.name = name;
+//    }
+//
+//    public void setMobileNumber(long mobileNumber) {
+//        super.mobileNumber = mobileNumber;
+//    }
+//
+//    public void setPasswd(String passwd) {
+//        super.passwd = passwd;
+//    }
 }

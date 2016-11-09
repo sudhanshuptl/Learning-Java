@@ -15,29 +15,8 @@ public class Members extends Users {
 
     }
 
-    public int getUserId() {
-        return super.userId;
-    }
+  
 
-    public void setUserId(int userId) {
-        super.userId = userId;
-    }
-
-    public String getName() {
-        return super.name;
-    }
-
-    public void setName(String name) {
-        super.name = name;
-    }
-
-    public long getMobileNumber() {
-        return super.mobileNumber;
-    }
-
-//    public void setIssuedBooks(int[] issuedBooks) {
-//        this.issuedBooks = issuedBooks;
-//    }
 
     public String getIssuedBooks() {
     	String issuedBookDetail="";
@@ -47,17 +26,7 @@ public class Members extends Users {
     	return issuedBookDetail;
     }
 
-    public void setMobileNumber(long mobileNumber) {
-        super.mobileNumber = mobileNumber;
-    }
-
-    public String getPasswd() {
-        return super.passwd;
-    }
-
-    public void setPasswd(String passwd) {
-        super.passwd = passwd;
-    }
+   
 
     public static boolean loginCheck(Database database, int memberID,
             String memberPassword) {
