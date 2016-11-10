@@ -12,8 +12,11 @@ public class UserDefinedThread extends Thread{
 
 	public static void main(String[] args){
 		UserDefinedThread udf = new UserDefinedThread(); //create thread object
-		udf.start(); //Make it thread of execution means create new thread
-		udf.run(); //user define thread always target run method
+		udf.start(); //Make it thread of execution means create new thread and run
+		
+//		UserDefinedThread udf1 = new UserDefinedThread(); //create thread object
+//		udf1.start(); //Make it thread of execution means create new thread and run
+//		
 		
 		System.out.println("i am in main");
 	}
