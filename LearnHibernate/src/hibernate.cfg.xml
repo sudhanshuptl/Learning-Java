@@ -30,10 +30,11 @@
 
         <!-- Drop and re-create the database schema on startup -->
         <!-- <property name="hbm2ddl.auto">update</property>  -->
-         <property name="hbm2ddl.auto">create</property>
+         <property name="hbm2ddl.auto">update</property>
  
         <!-- <mapping resource="org/hibernate/tutorial/domain/Event.hbm.xml"/> -->
-		<mapping class="com.virtusa.myapp.persist.Employee"/> 
+		<mapping class="com.virtusa.myapp.persist.Employee5"/>
+		
     </session-factory>
 
 </hibernate-configuration>
