@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+</head>
+<body>
+	<h1>Sign Up</h1>
+	<fieldset>
+		<legend>
+			<span class="number"></span>Your basic info
+		</legend>
+		<form action="dataentry" method="POST">
+			<label for="fname">First Name : </label> <br /> 
+			<input type="text" name="first_name" /><br /> 
+				Last Name : <br /> <input type="text" name="last_name" /><br /> 
+				Email : <br /> <input type="email" name="email" /><br /> 
+				Password : <br /> <input type="password" name="passwd" /><br /> 
+				Gender : <br /> 	<input type="radio" name="gender" value="male"> M <br />
+									<input type="radio" name="gender" value="female"> F <br /> 
+				Age : <br /><input type="number" name="age" min="18" max="65"><br />
+				Designation :	<br/>
+								<select name="desg">
+								<option selected disabled>Choose here</option>
+								  <option value="engineer">Engineer</option>
+								  <option value="manager">Manager</option>
+								  <option value="consultant">Consultant</option>
+								  <option value="director">Director</option>
+								</select> 
+								<br />
+				DOJ : <br /> <input type="date" name="doj"/><br />
+				City : <br /> <select name="city">
+									<option selected disabled>Choose here</option>
+								  <option value="hyd">HYD</option>
+								  <option value="blgr">BLGR</option>
+								  <option value="mum">MUM</option>
+								  <option value="pune">PUN</option>
+								</select> <br /> 
+				
+				Area : <br /> 
+							<select name="area">
+								<option selected disabled>Choose here</option>
+						          <option value="an">Anjahia Nagar</option>
+						          <option value="in">Indra Nagar</option>
+						          <option value="kd">Kondapur</option>
+						          <option value="ng">Nanakaramguda</option>
+			        		</select> 
+			        	<br /> 
+        <input type="submit" value="Register">
+        <input type="reset">
+		</form>
+	</fieldset>
+</body>
+</html>

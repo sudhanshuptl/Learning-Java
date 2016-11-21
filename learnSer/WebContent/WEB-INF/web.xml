@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>learnSer</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>registration.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>TestingServelet</display-name>
+    <servlet-name>TestingServelet</servlet-name>
+    <servlet-class>com.codecops.myapp.TestingServelet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestingServelet</servlet-name>
+    <url-pattern>/TestingServelet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UsingGenericServlet</display-name>
+    <servlet-name>UsingGenericServlet</servlet-name>
+    <servlet-class>com.codecops.myapp.UsingGenericServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UsingGenericServlet</servlet-name>
+    <url-pattern>/UsingGenericServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Display login</display-name>
+    <servlet-name>HandleLogin</servlet-name>
+    <servlet-class>com.codecops.myapp.HandleLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HandleLogin</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Store Data</display-name>
+    <servlet-name>StoreData</servlet-name>
+    <servlet-class>com.codecops.myapp.StoreData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StoreData</servlet-name>
+    <url-pattern>/mydata</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DataSubmitUsinghttpServlet</display-name>
+    <servlet-name>DataSubmitUsinghttpServlet</servlet-name>
+    <servlet-class>com.codecops.myapp.DataSubmitUsinghttpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DataSubmitUsinghttpServlet</servlet-name>
+    <url-pattern>/dataentry</url-pattern>
+  </servlet-mapping>
+</web-app>
