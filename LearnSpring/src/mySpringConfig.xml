@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- services -->
+<bean id="wBean" class="com.codecops.test.Welcome" >
+<property name="name" value="user1" />
+</bean>
+<bean id = "mMovie" class="com.codecops.test.SimpleMovieLister">
+<constructor-arg ref="mfinder"/>
+</bean>
+<bean id="mfinder" class="com.codecops.test.MovieFinder"> </bean>
+</beans>
