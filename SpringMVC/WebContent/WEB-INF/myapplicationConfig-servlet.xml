@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context.xsd
+						http://www.springframework.org/schema/mvc
+						http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<!-- <bean id="ucontroller" class="com.virtusa.spring.mvc.UserController"></bean> -->
+	<context:annotation-config></context:annotation-config>
+	<mvc:annotation-driven/>
+	<context:component-scan base-package="com.virtusa.spring.mvc"></context:component-scan>
+	
+	
+	
+	<bean id="viewTemplate" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<property name="prefix" value="/WEB-INF/views/"></property>
+	<property name="suffix" value=".jsp"></property>
+	</bean>
+	
+</beans>
+
+
+
+
+
+
+
+<!-- <context:component-scan base-package="com.virtusa.spring.cointainer"></context:component-scan> 
+	<context:annotation-config></context:annotation-config> <bean id="wBean" 
+	class="com.virtusa.spring.cointainer.Welcome"> collaborators and configuration 
+	for this bean go here </bean> <bean id="d" class="java.util.Date"></bean> 
+	<bean id="addr" class="com.virtusa.spring.cointainer.Address">p:houseNo="1-1-1" 
+	//in place of <property name="houseNo" value="1-1-1"></property> <property 
+	name="houseNo" value="1-1-1"></property> </bean> more bean definitions go 
+	here <bean id="uBean" class="com.virtusa.spring.cointainer.UserBean"> collaborators 
+	and configuration for this bean go here <property name="id" value="1"></property> 
+	<property name="name" value="name1"></property> <property name="gender" value="M"></property> 
+	<property name="mStatus" value="false"></property> <property name="phoneNumber" 
+	value="999999"></property> <property name="date" ref="d"></property> <property 
+	name="address" ref="addr"></property> <property name="bookList"></property> 
+	results in a setAddressList(java.util.List) call <property name="countryVisitedList"> 
+	<list> <value>INDIA</value> <value>Pakistan</value> <value>USA</value> <value>USA</value> 
+	</list> </property> results in a setAddressSet(java.util.Set) call <property 
+	name="countryVisitedSet"> <set> <value>INDIA</value> <value>Pakistan</value> 
+	<value>USA</value> <value>USA</value> </set> </property> results in a setAddressMap(java.util.Map) 
+	call <property name="countryVisitedMap"> <map> <entry key="1" value="INDIA" 
+	/> <entry key="2" value="Pakistan" /> <entry key="3" value="USA" /> <entry 
+	key="4" value="USA" /> </map> </property> results in a setAddressProp(java.util.Properties) 
+	call <property name="countryVisitedProp"> <props> <prop key="one">INDIA</prop> 
+	<prop key="two">Pakistan</prop> <prop key="three">USA</prop> <prop key="four">USA</prop> 
+	</props> </property> </bean> <bean id="constructor" class="com.virtusa.spring.client.Constrtest" 
+	> lazy-init="true" //(For ApplicationContext) scope="sinleton" same obj scope="prototype" 
+	different obj autowire="no"//auto assigning autowire="byName"//if same name 
+	autowire="byType"//same data type primary="true"//if two obj with same datatype 
+	init-method=""destroy-method=""depends-on="" <constructor-arg name="id" value="1213"></constructor-arg> 
+	</bean> -->
+
+
+<!-- https://www.mkyong.com/spring/spring-bean-reference-example/ -->
+<!-- https://www.tutorialspoint.com/spring/spring_injecting_collection.htm -->
