@@ -15,5 +15,9 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SpringCore4.2"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SpringMVC"/>
+	<classpathentry kind="lib" path="C:/mylib/spring/SpringMVC/validation-api-1.1.0.Final.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/HIbernate"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SpringJDBC"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Spring Hibernate Validation"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
