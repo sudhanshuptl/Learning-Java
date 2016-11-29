@@ -18,3 +18,9 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 </web-app>
+
+<!-- Note : anything in WEB-INF is not directly accessible. So we can hide our data css here
+but you need to mention static url in this config file to search for given file in this directory 
+<mvc:resource location ="WEB-INF/**" /> double * means see two level down
+whene ever you need to access you don't have to specify location , just specify file name
+-->
